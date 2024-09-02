@@ -52,3 +52,9 @@
     font-weight: 700;
     
 }
+
+.active{
+    color: yellow;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid yellow;
+}
