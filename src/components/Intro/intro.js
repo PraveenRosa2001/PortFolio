@@ -28,6 +28,7 @@ const Intro = () => {
             visually appealing and user-friendly websites.
           </p>
         </span>
+        <Link><button className="btn"><img src={btnImg} alt=""/>Hire Me</button></Link>
       </div>
       <img src={bg} alt="profile" className="bg" />
     </section>

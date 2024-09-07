@@ -17,7 +17,7 @@
     margin-right: 170px;
     border-radius: 50%; /* This makes the image round */
     overflow: hidden; /* Ensures the image doesn't overflow the border */
-    border: 5px solid yellow; /* Optional: add a border */
+     /* Optional: add a border */
 }
 
 .introContent {
@@ -64,7 +64,7 @@
     font-weight: 700;
 }
 
-.btnImg {
+.btn Img {
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
