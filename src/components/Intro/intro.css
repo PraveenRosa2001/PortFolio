@@ -13,7 +13,7 @@
     z-index: -1; 
     object-fit: cover;
     height: 500px; /* Ensure height and width are equal */
-    width: 450px;
+    width: 440px;
     margin-right: 170px;
     border-radius: 50%; /* This makes the image round */
     overflow: hidden; /* Ensures the image doesn't overflow the border */
@@ -53,6 +53,7 @@
     font-size: medium;
     font-weight: 300;
     letter-spacing: 1px;
+    font-weight: 450;
 }
 
 .btn {
