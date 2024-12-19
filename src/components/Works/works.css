@@ -1,4 +1,3 @@
-
 #works {
     overflow: hidden;
     width: 100vw;
@@ -17,8 +16,7 @@
     margin-bottom: 20px;
     font-size: 2.5rem;
     color: #ffffff;
-    font-weight: 700px;
-
+    font-weight: 700;
 }
 
 .workDesc {
@@ -37,7 +35,6 @@
     margin-top: 2rem;
 }
 
-
 .skills-title {
     width: 100%;
     text-align: center;
@@ -47,6 +44,86 @@
     margin-bottom: 20px;
 }
 
+.technical-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.technical-skills-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.skill {
+    width: 150px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.skill .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill .icon:nth-child(1) {
+    color: #f7df1e; /* JavaScript Yellow */
+}
+
+.skill .icon:nth-child(2) {
+    color: #e34f26; /* HTML Orange */
+}
+
+.skill .icon:nth-child(3) {
+    color: #2965f1; /* CSS Blue */
+}
+
+.skill .icon:nth-child(4) {
+    color: #61dafb; /* React Blue */
+}
+
+.skill .icon:nth-child(5) {
+    color: #000000; /* Next.js Black */
+}
+
+.skill .icon:nth-child(6) {
+    color: #47a248; /* MongoDB Green */
+}
+
+.skill .icon:nth-child(7) {
+    color: #ffca28; /* Firestore Yellow */
+}
+
+.skill .icon:nth-child(8) {
+    color: #00758f; /* MySQL Blue */
+}
+
+.skill span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00ff00; /* Default progress color */
+    transition: width 0.5s ease-in-out;
+}
 
 .professional-skills-section {
     width: 100%;
@@ -115,55 +192,4 @@
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-}
-
-
-.technical-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.technical-skills-title {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.skill {
-    width: 150px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.skill img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-}
-
-.skill span {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
-    background-color: #2d2d2d;
-    width: 100%;
-    height: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress {
-    height: 100%;
-    background-color: #00ff00; 
-    transition: width 0.5s ease-in-out;
 }

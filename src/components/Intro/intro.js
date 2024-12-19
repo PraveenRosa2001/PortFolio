@@ -4,6 +4,7 @@ import bg from "../../assets/image2.png";
 import { Link } from "react-scroll";
 import btnImg from "../../assets/hireme.png";
 import { Typewriter } from "react-simple-typewriter";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; 
 
 const Intro = () => {
   return (
@@ -30,8 +31,29 @@ const Intro = () => {
             <br />
             user experiences.
           </p>
+
+          {/* Social Media Links */}
+          <div className="socialLinks">
+            <a
+              href="https://github.com/PraveenRosa2001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialLink"
+            >
+              <FaGithub size={35} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/praveen-rosa-476a35238/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialLink"
+            >
+              <FaLinkedin size={35} />
+            </a>
+          </div>
         </span>
-        <Link>
+
+        <Link to="contact">
           <button className="btn">
             <img src={btnImg} alt="" />
             Hire Me

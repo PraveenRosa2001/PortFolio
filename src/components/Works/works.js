@@ -1,15 +1,16 @@
 import React from 'react';
 import './works.css';
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiMongodb, SiFirebase, SiMysql } from 'react-icons/si';
 
 const technicalSkillsData = [
-  { name: "JavaScript", icon: "path_to_html_icon", percentage: 90 },
-  { name: "HTML", icon: "path_to_css_icon", percentage: 85 },
-  { name: "CSS", icon: "path_to_js_icon", percentage: 80 },
-  { name: "React.js", icon: "path_to_php_icon", percentage: 70 },
-  { name: "Next.js", icon: "path_to_react_icon", percentage: 75 },
-  { name: "MongoDB", icon: "path_to_react_icon", percentage: 75 },
-  { name: "Firestore", icon: "path_to_react_icon", percentage: 75 },
-  { name: "MySQL", icon: "path_to_react_icon", percentage: 75 },
+  { name: "JavaScript", icon: <SiJavascript />, percentage: 90 },
+  { name: "HTML", icon: <SiHtml5 />, percentage: 85 },
+  { name: "CSS", icon: <SiCss3 />, percentage: 80 },
+  { name: "React.js", icon: <SiReact />, percentage: 70 },
+  { name: "Next.js", icon: <SiNextdotjs />, percentage: 75 },
+  { name: "MongoDB", icon: <SiMongodb />, percentage: 75 },
+  { name: "Firestore", icon: <SiFirebase />, percentage: 75 },
+  { name: "MySQL", icon: <SiMysql />, percentage: 75 },
 ];
 
 const professionalSkillsData = [
@@ -23,7 +24,7 @@ const professionalSkillsData = [
 const Skill = ({ name, icon, percentage }) => {
   return (
     <div className="skill">
-      <img src={icon} alt={`${name} Icon`} />
+      <div className="icon">{icon}</div>
       <span>{name}</span>
       <div className="progress-bar">
         <div className="progress" style={{ width: `${percentage}%` }}></div>
@@ -31,7 +32,6 @@ const Skill = ({ name, icon, percentage }) => {
     </div>
   );
 };
-
 
 const ProfessionalSkill = ({ name, percentage }) => {
   return (
@@ -61,15 +61,14 @@ const ProfessionalSkill = ({ name, percentage }) => {
 const Works = () => {
   return (
     <section id="works">
-      <h2 className="workTitle" >My Skills</h2>
+      <h2 className="workTitle">My Skills</h2>
       <span className="workDesc">
         Dive into my arsenal of skills, crafted through passion and experience. From designing seamless user interfaces to building robust web and mobile solutions, my toolkit is a blend of artistry and technical prowess.
       </span>
 
       <div className="worksImgs">
-
-      <div className="technical-skills">
-          <h3 className="technical-skills-title">Technical Skills</h3> 
+        <div className="technical-skills">
+          <h3 className="technical-skills-title">Technical Skills</h3>
           {technicalSkillsData.map((skill) => (
             <Skill
               key={skill.name}
@@ -79,9 +78,9 @@ const Works = () => {
             />
           ))}
         </div>
-        
+
         <div className="professional-skills-section">
-          <h3 className="skills-title">Professional Skills</h3> 
+          <h3 className="skills-title">Professional Skills</h3>
           <div className="professional-skills">
             {professionalSkillsData.map((skill) => (
               <ProfessionalSkill
@@ -92,9 +91,6 @@ const Works = () => {
             ))}
           </div>
         </div>
-
-        
-        
       </div>
     </section>
   );

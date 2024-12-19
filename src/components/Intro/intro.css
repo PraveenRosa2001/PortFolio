@@ -1,3 +1,25 @@
+/* Social Media Icons */
+.socialLinks {
+  margin-top: -20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: -20px;
+}
+
+.socialLink {
+  color: white; /* Default color */
+  transition: color 0.3s;
+}
+
+.socialLink:hover {
+  color: #0077b5; /* LinkedIn blue for LinkedIn hover */
+}
+
+.socialLink:first-child:hover {
+  color: #6e5494; /* Purple color for GitHub hover */
+}
+
+/* Style for other elements */
 #intro {
   height: calc(100vh - 4rem);
   width: 100vw;
@@ -9,14 +31,13 @@
 .bg {
   position: absolute;
   top: 10rem;
-  left:850px;
+  left: 850px;
   z-index: -1;
-  height: 400px; /* Ensure height and width are equal */
+  height: 400px; 
   width: 400px;
   margin-right: 170px;
-  border-radius: 50%; /* This makes the image round */
-  overflow: hidden; /* Ensures the image doesn't overflow the border */
-  /* Optional: add a border */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .introContent {
@@ -64,13 +85,12 @@
   font-weight: 700;
 }
 
-.btn Img {
+.btn img {
   object-fit: cover;
   margin: 0 0.25rem;
   height: 1rem;
 }
 
-/* Animation for slide-in effect */
 @keyframes slideIn {
   0% {
     transform: translateX(-100%);
@@ -82,7 +102,6 @@
   }
 }
 
-/* Animation for fade-in effect */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -92,7 +111,6 @@
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 840px) {
   .bg {
     right: -10vw;
