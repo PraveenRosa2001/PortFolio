@@ -36,8 +36,8 @@ const Contact = () => {
     
     return (
     <section id="contactPage">
-        <div id="clients">
-            <h1 className="contactPageTitle">My Clients</h1>
+        <div id="Projects">
+            <h2 className="contactPageTitle">Latest Projects</h2>
             <p className="clientsDesc">I have add the opportunity to work with a diverse group of companies.
                 Some of the notable companies I have workded with includes ,
             </p>
@@ -57,10 +57,20 @@ const Contact = () => {
                 <textarea className='msg' name="message" rows="5" placeholder='Your Message'></textarea>
                 <button type='submit' value='Send' className="submitBtn">Submit</button>
                 <div className="links">
-                    <img src={FacebookIcon} alt="Facebook" className="link"/> 
-                    <img src={TwitterIcon} alt="Twitter" className="link"/>
-                    <img src={YoutubeIcon} alt="Youtube" className="link"/>
-                    <img src={InstagramIcon} alt="Instagram" className="link"/>
+                    <a href="https://www.facebook.com/praveen.rosa.39/" target="_blank" rel="noopener noreferrer">
+                      <img src={FacebookIcon} alt="Facebook" className="link" />
+                    </a>
+                    <a href="https://x.com/PravDil2001" target="_blank" rel="noopener noreferrer">
+                      <img src={TwitterIcon} alt="Twitter" className="link"/>
+                    </a>
+                    <a href="https://www.youtube.com/@ThishmiAmaya" target="_blank" rel="noopener noreferrer">
+                      <img src={YoutubeIcon} alt="Youtube" className="link"/>
+                    </a>
+                    <a href="https://www.instagram.com/mr.pd_/" target="_blank" rel="noopener noreferrer">
+                      <img src={InstagramIcon} alt="Instagram" className="link"/>
+                    </a>
+                    
+                    
                 </div>
             </form>
         </div>

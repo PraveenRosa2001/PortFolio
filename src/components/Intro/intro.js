@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import bg from "../../assets/image2.jpg";
+import bg from "../../assets/image2.png";
 import { Link } from "react-scroll";
 import btnImg from "../../assets/hireme.png";
 import { Typewriter } from "react-simple-typewriter";
@@ -11,7 +11,7 @@ const Intro = () => {
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
-          I'm <span className="introName">Praveen</span> <br />
+          I'm <span className="introName">Praveen Dilshan</span> <br />
           <span className="typewriter">
             <Typewriter
               words={["Software Engineer"]}
@@ -26,8 +26,9 @@ const Intro = () => {
           <p className="introPara">
             I am a skilled web and app developer, specializing in creating
             visually <br />
-            appealing, user-friendly websites and mobile apps with seamless <br/>user
-            experiences.
+            appealing, user-friendly websites and mobile apps with seamless{" "}
+            <br />
+            user experiences.
           </p>
         </span>
         <Link>

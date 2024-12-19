@@ -11,8 +11,8 @@
 }
 
 .skillTitle{
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 700;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
 }
@@ -43,12 +43,22 @@
     height: 3rem;
     width: 3rem;
     margin-right: 2rem;
+    margin-top: 10px;
 }
 
 .skillBarText p{
     font-size: 0.9rem;
-    font-weight: 200;
+    font-weight: 400;
 }
+.skillBarText h2 a {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+  
+  .skillBarText h2 a:hover {
+    color:yellow;
+  }
+  
 
 @media screen and (max-width:720px) {
     .skillBarText p{
