@@ -4,9 +4,18 @@ import bg from "../../assets/image2.png";
 import { Link } from "react-scroll";
 import btnImg from "../../assets/hireme.png";
 import { Typewriter } from "react-simple-typewriter";
-import { FaGithub, FaLinkedin } from "react-icons/fa"; 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import MyCv from "../../assets/SE_20APC4546_Praveen_Dilshan.pdf"; // Ensure this path is correct
 
 const Intro = () => {
+  // Function to handle the download programmatically
+  const handleDownload = () => {
+    const a = document.createElement('a');
+    a.href = MyCv;
+    a.download = "SE_20APC4546_Praveen_Dilshan.pdf";
+    a.click(); // Trigger the download
+  };
+
   return (
     <section id="intro">
       <div className="introContent">
@@ -31,7 +40,6 @@ const Intro = () => {
             <br />
             user experiences.
           </p>
-
           {/* Social Media Links */}
           <div className="socialLinks">
             <a
@@ -53,8 +61,9 @@ const Intro = () => {
           </div>
         </span>
 
+        {/* Button for navigation and download */}
         <Link to="contact">
-          <button className="btn">
+          <button className="btn" onClick={handleDownload}>
             <img src={btnImg} alt="" />
             Hire Me
           </button>

@@ -53,6 +53,9 @@
     font-weight: 700;
     cursor: pointer;
 }
+.dekstopMenuBtn:hover{
+    background-color: yellow;
+}
 
 .active{
     color: yellow;

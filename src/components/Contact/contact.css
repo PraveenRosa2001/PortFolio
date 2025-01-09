@@ -69,12 +69,15 @@
   .submitBtn {
     background: white;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 30px;
     padding: 0.75rem 3.5rem;
     margin: 2rem;
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
+  }
+  .submitBtn:hover{
+    background-color: yellow;
   }
   
   .links {
@@ -109,6 +112,49 @@
   .links a:nth-child(4):hover {
     color: #e4405f; /* Instagram Pink */
   }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr); /* 3 equal columns */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .image-item {
+    text-align: center; /* Center text and buttons under the images */
+  }
+  
+  .project {
+    width: 400px;
+    height: 200px;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 30px;
+  }
+  
+  .button:hover {
+    background-color: yellow;
+  }
+  
+  
   
   @media screen and (max-width: 480px) {
     .links a {

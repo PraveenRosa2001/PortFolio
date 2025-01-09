@@ -83,12 +83,17 @@
   border-radius: 2rem;
   border: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .btn img {
   object-fit: cover;
   margin: 0 0.25rem;
   height: 1rem;
+}
+
+.btn:hover{
+  background-color: yellow;
 }
 
 @keyframes slideIn {
